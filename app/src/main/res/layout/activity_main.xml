@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/course_name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="course name"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:inputType="text"
+        android:id="@+id/course_name_edit_text"
+        android:layout_width="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="enter course name edit text"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/course_name_text_view" />
+
+    <com.garhy.acessbilityforcustomviews.ModulesCustomView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="50dp"
+        android:id="@+id/custom_view"
+        app:layout_constraintTop_toBottomOf="@id/course_name_edit_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="100dp"/>
+    <EditText
+        android:inputType="text"
+        android:id="@+id/q"
+        android:layout_width="0dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="enter course name edit text"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/custom_view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
